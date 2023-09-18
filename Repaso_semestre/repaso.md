@@ -106,10 +106,32 @@ for i in vocales:
     print(i)
 ```  
 #### cuando no sabemos la cantidad de veces de repiter 
+```python
 condicion=True
 while condicion:
     print("hola")
     texto=inmput("ingresa tu nombre o salir para terminar el programa")
     if texto="salir":
         condicion=False
+```
 
+## 6. FUNCIONES :
+Existen 2 tipos de funciones
+### propias del lenguaje
+que ya bienen creadas e insertadass en python y estan listas para ser usadas
+### estructura de uso de una funcion
+tiene el nombre seguido de parentesis,
+dentro de la parentesis podremos pasarles datos que necesita la funcion para ejecutarse
+### Esta es una funcion que nos sirve par mostrar por consola datos
+```python
+print("hola")
+```
+### len nos devuelve un numero
+```python
+print(len([1,5,6,7,8]))
+```
+### esta es una funcion que se detiene a esperar al usuario introdusca informacion
+### entre parentesis podremos escribir un mensaje que indique que accion realizara el usuario
+```python
+input("ingresa algo: ")
+```
