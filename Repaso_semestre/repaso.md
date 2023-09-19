@@ -117,7 +117,7 @@ while condicion:
 
 ## 6. FUNCIONES :
 Existen 2 tipos de funciones
-### propias del lenguaje
+### 1. propias del lenguaje
 que ya bienen creadas e insertadass en python y estan listas para ser usadas
 ### estructura de uso de una funcion
 tiene el nombre seguido de parentesis,
@@ -157,4 +157,83 @@ print(type(numero_entero))
 ### funcion para convertir un entero a un string
 ```python
 str(100) # ->> 100 ->> string
+```
+### funcion de python que nos permite agregar elementos al final de una lista
+```python
+lista=[15,72,78]
+elemento=100
+lista.append(elemento)
+print(lista)
+```
+### funcion de python que nos permit eliminar los elementos que se encuentran al final de una lista
+```python
+lista=[15,12,78] # pop elimina el ultimo elemento de la lista y lo guarde el elemnto en una variable si esque se desesa
+lista.pop()
+print(lista)
+```
+### funcion de python que nos permite agregar elementos en cualquier posicion de mi lista para eso se le tiene que pasar dos parametros, primero indicarle el indice y segundo el dato que e va agregar
+```python
+lista_nombres=["jory","nadine","bichota"]
+lista_nombres.insert(1,"satan")
+print(lista-nombres)
+```
+### funcion de python que nos permite eliminar elementos de cualquier posicion de una lista, esta funcion recibe solo el elemento que deseamos eliminar
+```python
+lista=[4,5,6,8,7]
+lista.remove(6)
+print(lista)
+```
+### funcion que nos permite dividir en una lista una cadena
+```python
+cadena="hola como estan"
+lista=cadena.split()
+print(lista)
+url="www.golle.com/id=70133573"
+id=url.split("=").pop()
+print(id)
+```
+### 2. funciones propias
+#### Una funcion son mini programas, tambien se le conoce como modulos o fragmentos de codigo de uso exclusivo
+### pasos para crear una fruncion propia
+#### 1. hacer uso de la palabra reservada def
+#### 2. definir un nombre de funcion que describa que tarea va a realizar
+#### 3. establecer los param,etros que resivira la funcion entre parentesis ()
+#### 4. establecer que valor o dato va retornar mi funcion con la palabra reservada "return"
+#### observacion =>> tambien podemos hacer uso de la funcion print() para retornar un mensaje en nuestra funcion
+#### existen dos tipos de funciones los que no resiven ningun parametro y los que resiven parametros
+### funcion sin parametros
+```python
+def saludo():
+    print("hola este es un saludo")
+# como hacemos uso de la funcion??
+# nombre de la funcion y parentesis
+saludo()
+```
+### funcion con parametros
+```python
+def mi_print(texto):
+    print(texto)
+
+print("hola este es print de python")
+mi_print("hola este es mi print creado")
+```
+```python
+def suma(a,b):
+    total=a+b
+    return total
+
+mi_print(suma(45,12)) ##=> 57
+```
+### ejemplo
+```python
+lista=[12,4,45,78,3,1]
+mi_print(max(lista)) # =>78
+
+def mi_max(lista):
+    numero_mayor=lista[0]
+    for numero in lista:
+        if numero > numero_mayor:
+            numero_mayor=numero
+    return numero_mayor
+mi_print(mi_max(lista))
 ```
