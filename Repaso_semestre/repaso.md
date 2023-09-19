@@ -135,3 +135,26 @@ print(len([1,5,6,7,8]))
 ```python
 input("ingresa algo: ")
 ```
+### esta funcion nos muestra el numero mayor de una lista
+```python
+lista=[45,12,78,3,24,50]
+numero_mayor=max(lista)
+print(numero_mayor)
+```
+### esta funcion nos muestra el numero menor de una lista
+```python
+lista=[45,12,78,9,6,12]
+numero_menor=min(lista)
+print(numero_menor)
+```
+### funcion para convertir de un string a un numero entero
+```python
+numero_string="100"
+print(type(numero_string))
+numero_entero=int(numero_string)
+print(type(numero_entero))
+```
+### funcion para convertir un entero a un string
+```python
+str(100) # ->> 100 ->> string
+```
