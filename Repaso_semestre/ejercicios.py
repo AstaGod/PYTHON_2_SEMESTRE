@@ -29,13 +29,71 @@
 #         print(f"ingresaste {n} veces el nombre")
 # crear un programa que pida un numero y lo evalues con el numero premiado si el numero ingresado es el premiado el programa finalizara
 # si el numero ingresaso es incorrecto el programa seguira pidiendo
-numero_premiado = 95
+# numero_premiado = 95
 
-while True:
-    numero_ingresado = int(input("Ingresa un número: "))
+# while True:
+#     numero_ingresado = int(input("Ingresa un número: "))
 
-    if numero_ingresado == numero_premiado:
-        print("¡Felicidades! Has acertado el número premiado.")
-        break 
-    else:
-        print("Número incorrecto. Inténtalo de nuevo.")
+#     if numero_ingresado == numero_premiado:
+#         print("¡Felicidades! Has acertado el número premiado.")
+#         break 
+#     else:
+#         print("Número incorrecto. Inténtalo de nuevo.")
+
+# crear una funcio por cada operador arimetrico y que resiva 2 parametros y retorne el resultado de la 
+# operacion, OJO. crearse un funcion que nos permita imprimir el resultado
+
+# def mi_print(texto):
+#     print(texto)
+
+# def suma(a,b):
+#     total=a+b
+#     return total
+
+# mi_print(suma(45,12))
+
+# def resta(a,b):
+#     total=a-b
+#     return total
+
+# mi_print(resta(45,12))
+
+# def multiplicar(a,b):
+#     total=a*b
+#     return total
+
+# mi_print(multiplicar(45,12))
+
+# def dividir(a,b):
+#     total=a/b
+#     return total
+
+# mi_print(dividir(45,12))
+
+# 5. Escribe una funcion que reciba un numero entero positivo y devuelova su factorial
+
+# def calcular_factorial(numero):
+#     if numero < 0:
+#         return "Solo se aceptan números positivos"
+#     elif numero == 0:
+#         return 1  # El factorial de 0 es 1
+#     else:
+#         factorial = 1
+#         for i in range(1, numero + 1):
+#             factorial *= i
+#         return factorial
+
+# numero = int(input("Ingresa un número: "))
+# factorial_resultante = calcular_factorial(numero)
+
+# if type(factorial_resultante) == str:
+#     print(factorial_resultante)
+# else:
+#     print("El factorial de", numero, "es:", factorial_resultante)
+
+
+# 7. Escribir una funcion que resiva como parametros una lista de numeros y retorne una nueva 
+# lista con el cuadro de cuadrado numero de la lista ingresada 
+
+# 8. Escribir un programa que reciva una cadena de careacteres y devuelva un objeto
+# concada palabra que contiene y su frecuencia

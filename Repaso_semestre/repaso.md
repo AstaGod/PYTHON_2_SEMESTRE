@@ -237,3 +237,33 @@ def mi_max(lista):
     return numero_mayor
 mi_print(mi_max(lista))
 ```
+```python
+lista=[12,4,45,78,3,1]
+mi_print(min(lista)) # =>78
+
+def mi_min(lista):
+    numero_menor=lista[0]
+    for numero in lista:
+        if numero < numero_menor:
+            numero_menor=numero
+    return numero_menor
+mi_print(mi_min(lista))
+```
+### funciones con muchos parametros
+```python
+def funcion(*muchos_parametros):    # el * es para poner varios parametros
+    total=0
+    for numero in muchos_parametros:
+        total=total+numero
+    return total
+
+print(funcion(45,78,45,415))
+```
+```python
+def datos(*args):
+    nombre=args[0]
+    apellido=args[1]
+    edad=args[2]
+    return f"mi nombre es,{nombre},{apellido} y mi edad es {edad}"
+
+print(datos("edwin","lopez","19"))
