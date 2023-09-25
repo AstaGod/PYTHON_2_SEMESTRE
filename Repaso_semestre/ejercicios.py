@@ -95,5 +95,38 @@
 # 7. Escribir una funcion que resiva como parametros una lista de numeros y retorne una nueva 
 # lista con el cuadro de cuadrado numero de la lista ingresada 
 
+def calcular_cuadrados(lista_numeros):
+    cuadrados = []  # Crear una lista vacía para almacenar los cuadrados
+    
+    for numero in lista_numeros:
+        cuadrado = numero ** 2  # Calcular el cuadrado del número
+        cuadrados.append(cuadrado)  # Agregar el cuadrado a la lista
+    
+    return cuadrados
+
+numeros = [1, 2, 3, 4, 5]
+cuadrados = calcular_cuadrados(numeros)
+print(cuadrados)  # Debería imprimir [1, 4, 9, 16, 25]
+
 # 8. Escribir un programa que reciva una cadena de careacteres y devuelva un objeto
 # concada palabra que contiene y su frecuencia
+
+def contar_palabras(cadena):
+    # Dividir la cadena en palabras
+    palabras = cadena.split()
+    
+    # Crear un diccionario para almacenar las frecuencias
+    frecuencias = {}
+    
+    # Contar la frecuencia de cada palabra
+    for palabra in palabras:
+        if palabra in frecuencias:
+            frecuencias[palabra] += 1
+        else:
+            frecuencias[palabra] = 1
+    
+    return frecuencias
+
+texto = "Hola mundo, hola Python, mundo Python"
+resultado = contar_palabras(texto)
+print(resultado)
