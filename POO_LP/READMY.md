@@ -20,7 +20,7 @@ class Perro:
     def ladrar(self):
         return "gua gua mascota"
 
-    def correr(self.pasos):
+    def correr(self.pasos):  # self es para señalar que esta funcion pertenece al objeto
         response=f"corriste {pasos}, pasos"
         return huevo
 

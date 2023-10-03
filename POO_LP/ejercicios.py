@@ -10,6 +10,8 @@ class Celular:
     
     def mensaje(self):
         return "escribir y recibir mensajes de texto"
+    
+print(Celular.marca)
 # haciendo uso de la POO crear un objeto para entidad vehiculo
 class Vehiculo:
     marca="Lanborguini"
@@ -22,6 +24,8 @@ class Vehiculo:
     
     def estacionar(self):
         return "te estasionaste en el lugar 7"
+    
+print(Vehiculo.color)
 # haciendo uso de la POO crear un objeto para entidad avion
 class avion:
     color="blanco"
@@ -33,6 +37,7 @@ class avion:
     
     def aterriza(self):
         return "se aterrizo con exito en el aeropuerto"
+print(avion.color)
 # haciendo uso de la POO crear un objeto para un heroe de dota2
 class heroe:
     nombre="Jinx"
@@ -53,3 +58,40 @@ class heroe:
     
     def habilidad_r(self):
         return "¡Supermegacohete mortal!: Jinx dispara un supercohete por todo el mapa que va aumentando su daño a medida que avanza"
+
+print(heroe.nombre)
+
+# haciendo uso de la POO crear un objero para una pc
+class pc:
+    componentes="Monitor, Case, Teclado, etc"
+    color="rgb"
+
+    def prender(self):
+        return "presionar el boton de encendidio"
+    def teclado(self):
+        return "escribir en el teclado"
+    
+print(pc.componentes)
+# haciendo uso de la POO crear un objero para una impresora
+class impresora:
+    color="negro"
+    tinta="negro, azul, rojo, etc"
+
+    def imprimir(self):
+        return "imprimi una hoja"
+    def escan(self):
+        return "escanea una imagen o documento"
+    def momnocromatica(self):
+        return "solo imprime en color negro"
+print(impresora.tinta)
+# haciendo uso de la POO crear un objero para emitir una factura
+class factura:
+    nombre="nombre del cliente"
+    DNI="4454564654"
+
+    def agreagar_p(self):
+        return "agregar producto"
+    def igv(self):
+        return "sacar el igv"
+    
+print(factura.nombre)
