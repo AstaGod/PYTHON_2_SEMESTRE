@@ -95,3 +95,84 @@ class factura:
         return "sacar el igv"
     
 print(factura.nombre)
+
+# 1. crear un objeto laptop con dos atributos de clase y 5 atributos de instancia devera tener hasta 3 funcionalidades como minimo
+
+# crear tres objetos instancia de clase distrinstos
+# # ojo: solo utilizar lo que hemos echo en clase
+class Laptop:
+    tamaño="16.5 pulgadas"
+    laptop="computadora portatil"
+
+    def __init__(self,marca,modelo,procesador,almacenamiento,RAM):
+        self.marca=marca
+        self.modelo=modelo
+        self.procesador=procesador
+        self.almacenamiento=almacenamiento
+        self.RAM=RAM
+
+    def jugar(self,juegos):
+        return f"esta jugando {juegos}"
+
+# objeto 1
+lapcris=Laptop("Asus","Rog Strix G713RM-LL046W","Ryzen 9 6900HX ","1 TB","16GB")
+print(lapcris.marca)
+print(lapcris.procesadeor)
+print(lapcris.jugar("Minecraft"))
+# objeto 2
+laphans=Laptop("hp","V15 Gen 2 ","Core i7 1165G7 ","500GB","8GB")
+print(laphans.marca)
+print(laphans.procesadeor)
+print(laphans.jugar("Pou"))
+# objeto 3
+lapjona=Laptop("Dell","Inspiron 15 3511 ","Intel Core i5 1135G7","500GB","8GB")
+print(lapjona.marca)
+print(lapjona.procesadeor)
+print(lapjona.jugar("Free Fire"))
+
+# crear una clase mercado que tengta un atributo de clase 5 atributos de instancia y funcionalidades
+#devera crear 4 instancia de la clase mescado
+#ejm puesto mechita, puesto la gringa, puesto ojo de uva
+class Mercado:
+    medida="32m"
+
+    def __init__(self,nombre_puesto,sexo,color,tipo_de_puesto,productos):
+        self.nombre_puesto=nombre_puesto
+        self.sexo=sexo
+        self.color=color
+        self.tipo_de_puesto=tipo_de_puesto
+        self.productos=productos
+
+    def abrir_puerta(self,nombre):
+        return f"el cliente {nombre} entro"
+    
+    def compro(self,client,product):
+        return f"{client} compro este producto: {product}"
+    
+    def salir(self,client):
+        return f"el client {client} salio por la puerta"
+    
+# objeto 1
+clientvirgen=Mercado("puesto mechita","femeninio","azul","comida","cebiche")
+print(clientvirgen.tipo_de_puesto)
+print(clientvirgen.productos)
+print(clientvirgen.abrir_puerta("orlando"))
+print(clientvirgen.compro("orlando","cebiche"))
+# objeto 2
+clientjona=Mercado("la gringa","femeninio","rosa","venta de celulares","S23 Ultra")
+print(clientjona.tipo_de_puesto)
+print(clientjona.productos)
+print(clientjona.abrir_puerta("jhonatan devorador de mundos"))
+print(clientjona.compro("jhonatan","S23 Ultra"))
+# objeto 3
+clientjona=Mercado("la gringa","femeninio","rosa","venta de celulares","S23 Ultra")
+print(clientjona.tipo_de_puesto)
+print(clientjona.productos)
+print(clientjona.abrir_puerta("jhonatan devorador de mundos"))
+print(clientjona.salir("hans"))
+# objeto 4
+clientchina=Mercado("los facheros","masculino","naranja","venta de ropa","zapatos")
+print(clientchina.tipo_de_puesto)
+print(clientchina.productos)
+print(clientchina.abrir_puerta("jhonatan devorador de mundos"))
+print(clientchina.salir("china"))
