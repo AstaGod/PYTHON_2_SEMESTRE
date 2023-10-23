@@ -212,7 +212,7 @@ etiqueta2=Label(ventana,text="Ingrese su contra")
 etiqueta2.pack()
 
 text_contra=Entry(ventana)
-text_contra.config(bg="red",fg="white")
+text_contra.config(bg="red",fg="white",show="*")
 text_contra.pack()
 boton_capturar=Button(ventana,text="Comprovar",command=comprobar_datos)
 boton_capturar.pack()
