@@ -61,13 +61,13 @@ print(nuevo_objet)
 
 tiendas=[
     {
-        "ruc":465463213456,
+        "ruc":857496321,
         "nombre":"el pichilon",
-        "categoria":["abarrotes"],
+        "categoria":["bodega"],
         "horario_atencion":{
-            "dia":"7am-12pm",
+            "dia":"7am-12m",
             "tarde":"2pm-8pm"
-        }
+        },
         "gerente":"nadine"
     }
 ]

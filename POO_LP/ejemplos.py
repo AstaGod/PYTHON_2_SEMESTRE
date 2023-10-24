@@ -57,7 +57,7 @@ class Producto:
         producto_buscar=productos[id-1]
         return producto_buscar
     
-    def eliminar_producto(delf,id):
+    def eliminar_producto(self,id):
         producto_eliminar=productos.pop(id-1)
         return f"el siguiente producto fue eliminado {producto_eliminar}"
     
