@@ -81,3 +81,5 @@ print(actu.mostrar_negocio(11))
 print(actu.actualizar_horario(1,'horario_atencion',{'dia':'7am-12pm','tarde':'3pm-9pm'}))
 print(actu.mostrar_negocio(2))
 
+
+
