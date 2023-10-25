@@ -1,5 +1,6 @@
 negocios=[
     {
+        "id":1,
         "ruc":857496321,
         "nombre":"el pichilon",
         "categoria":["bodega"],
@@ -10,6 +11,7 @@ negocios=[
         "gerente":"edwin"
     },
     {
+        "id":2,
         "ruc":481234987,
         "nombre":"pepe",
         "categoria":["abarrotes"],
@@ -20,6 +22,7 @@ negocios=[
         "gerente":"nadine"
     },
     {
+        "id":3,
         "ruc":8574963,
         "nombre":"las chaqueteadas",
         "categoria":["farmacia","bodega","restaurant"],
@@ -30,6 +33,7 @@ negocios=[
         "gerente":"china"
     },
     {
+        "id":4,
         "ruc":85749771,
         "nombre":"las sirenitas",
         "categoria":["restaurant"],
@@ -40,6 +44,7 @@ negocios=[
         "gerente":"cristian"
     },
     {
+        "id":5,
         "ruc":16472121,
         "nombre":"chaqueteros",
         "categoria":["farmacia"],
@@ -50,6 +55,7 @@ negocios=[
         "gerente":"cristian"
     },
     {
+        "id":6,
         "ruc":85321,
         "nombre":"papus",
         "categoria":["bodega"],
@@ -60,6 +66,7 @@ negocios=[
         "gerente":"cristian"
     },
     {
+        "id":7,
         "ruc":857496321454646,
         "nombre":"el pichilon 2",
         "categoria":["bodega"],
@@ -70,6 +77,7 @@ negocios=[
         "gerente":"nadine"
     },
     {
+        "id":8,
         "ruc":11123461,
         "nombre":"xd",
         "categoria":["restaurant"],
@@ -80,6 +88,7 @@ negocios=[
         "gerente":"edwin"
     },
     {
+        "id":9,
         "ruc":857000478,
         "nombre":"jijijia",
         "categoria":["farmacia"],
@@ -90,6 +99,7 @@ negocios=[
         "gerente":"nadine"
     },
     {
+        "id":10,
         "ruc":13516715,
         "nombre":"el pichilon 3",
         "categoria":["bodega"],
