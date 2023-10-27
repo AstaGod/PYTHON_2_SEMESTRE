@@ -219,3 +219,24 @@
 # ventana.mainloop()
 
 # EJERCICIO 7
+from tkinter import*
+ventana=Tk()
+ventana.geometry("400x500")
+ventana.title("Papu misterioso")
+
+etiqueta1=Label(ventana,text="Ingrese un numero")
+etiqueta1.grid(row=1,column=0)
+etiqueta2=Label(ventana,text="Ingrese un numero")
+etiqueta2.grid(row=)
+
+
+
+etiqueta_invi=Label(ventana,text="")
+etiqueta_invi.pack()
+
+
+text_usuario=Entry(ventana)
+text_usuario.config(bg="red",fg="white")
+text_usuario.grid(row=1,column=1)
+
+ventana.mainloop()
