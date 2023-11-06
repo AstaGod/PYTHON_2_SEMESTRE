@@ -2,7 +2,7 @@ from tkinter import*
 from funciones import*
 root=Tk()
 root.title("Calculadora")
-root.geometry("296x265")
+root.geometry("296x295")
 root.resizable(0,0)
 #####
 fuente_general=("arial",8,"bold")
@@ -33,14 +33,16 @@ boton_9=Button(root,text="9",width=9,height=3,bg="white",fg="red",borderwidth=0,
 boton_10=Button(root,text="0",width=9,height=3,bg="white",fg="red",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:enviar_boton(0,pantalla)).grid(row=4,column=1,padx=1,pady=1)
 
 # boton =
-boton_11=Button(root,text="=",width=9,height=3,bg="red",fg="white",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:enviar_boton(".",pantalla)).grid(row=4,column=0,padx=1,pady=1)
+boton_11=Button(root,text="=",width=9,height=3,bg="red",fg="white",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:igual(pantalla)).grid(row=4,column=0,padx=1,pady=1)
 # boton del .
-boton_punto=Button(root,text=".",width=9,height=3,bg="spring green",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:enviar_boton("=",pantalla)).grid(row=4,column=2,padx=1,pady=1)
+boton_punto=Button(root,text=".",width=9,height=3,bg="spring green",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:enviar_boton(".",pantalla)).grid(row=4,column=2,padx=1,pady=1)
 # boton de operaciones
-boton_suma=Button(root,text="+",width=9,height=3,bg="deep sky blue",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:enviar_boton("+",pantalla)).grid(row=1,column=3,padx=1,pady=1)
-boton_menos=Button(root,text="-",width=9,height=3,bg="deep sky blue",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:enviar_boton("-",pantalla)).grid(row=2,column=3,padx=1,pady=1)
-boton_multiplicacion=Button(root,text="x",width=9,height=3,bg="deep sky blue",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:enviar_boton("*",pantalla)).grid(row=3,column=3,padx=1,pady=1)
-boton_dividir=Button(root,text="/",width=9,height=3,bg="deep sky blue",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:enviar_boton("/",pantalla)).grid(row=4,column=3,padx=1,pady=1)
+boton_suma=Button(root,text="+",width=9,height=3,bg="deep sky blue",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:operacion("+",pantalla)).grid(row=1,column=3,padx=1,pady=1)
+boton_menos=Button(root,text="-",width=9,height=3,bg="deep sky blue",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:operacion("-",pantalla)).grid(row=2,column=3,padx=1,pady=1)
+boton_multiplicacion=Button(root,text="x",width=9,height=3,bg="deep sky blue",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:operacion("*",pantalla)).grid(row=3,column=3,padx=1,pady=1)
+boton_dividir=Button(root,text="/",width=9,height=3,bg="deep sky blue",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:operacion("/",pantalla)).grid(row=4,column=3,padx=1,pady=1)
 
+# boton limpiar
+boton_limpiar=Button(root,text="Limpiar",width=9,height=3,bg="deep sky blue",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:limpiar(pantalla)).grid(row=5,column=0,columnspan=4,padx=4,pady=1,sticky=W+E)
 
 root.mainloop()
