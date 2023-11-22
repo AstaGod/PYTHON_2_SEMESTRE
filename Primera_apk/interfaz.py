@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import ttk
 from config import *
 
 class InterfazApp(Tk):
@@ -45,3 +46,27 @@ class InterfazApp(Tk):
         #boton cancelar
         self.cancelar=Button(self.cajas_botones,text="Cancelar",bg=COLOR_BOTON,fg="White",relief=FLAT,bd=0,width=20,height=2,font=("Arial",10)).pack(pady=10)
         #FIN CAJITA DE BOTONES
+        #TABLA DE DATOS
+        self.caja_datos=LabelFrame(self,text="Caja de Datos",width=600,height=360,bg=COLOR_FONDO_PRIMARIO,fg="white",font=("arial",12),relief=FLAT,pady=60)
+        self.caja_datos.grid(row=0,column=2,pady=20,padx=20)
+
+        #tabla
+        self.tabla_datos=ttk.Treeview(self.caja_datos,columns=("#1","#2"))
+        self.tabla_datos.column("#0",width=40)
+        self.tabla_datos.column("#1",width=120)
+        self.tabla_datos.column("#2",width=40)
+
+        self.tabla_datos.heading("#0",text="Nombres")
+        self.tabla_datos.heading("#1",text="Apellidos")
+        self.tabla_datos.heading("#2",text="Celular")
+        alumnitos=[
+            ("moises","peñadira","564646441"),
+            ("tarantula","medafiel","987654321"),
+            ("maria","de jory","9877854321"),
+            ("nadine","guadalupe","98888654321")
+        ]
+        for nom,ape,cel in alumnitos:
+            self.tabla_datos.insert("",END,text=nom,values=(ape,cel))
+
+        self.tabla_datos.place(x=0,y=0,width=400,height=600)
+        #FIN DE TABLA DE DATOS
