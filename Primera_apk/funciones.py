@@ -27,7 +27,6 @@ def f_eliminar(ventana):
         print("Selecciona una fila para eliminar.")
 
 def f_actualizar(ventana):
-    item_seleccionado = ventana.tabla_datos.selection()
     if ventana.nombre_texto.get()=="":
         showerror(title="SIN DATOS",message="Eres huevon no hay nada para actualizar")
     else:
@@ -38,10 +37,12 @@ def f_actualizar(ventana):
         mensaje=askyesno(title="Actualizar",message="Estas seguro que deseas actualizar")
         if mensaje == True:
             f_limpiar(ventana)
+            ventana.tabla_datos.selection_remove(elem_actualizar)
             return ventana.tabla_datos.item(elem_actualizar,text=nombre,values=(apellidos,celular))
         else:
             showinfo(title="NO ACTUALIZO",message="No se actualizo ningun registro")
             f_limpiar(ventana)
+            ventana.tabla_datos.selection_remove(elem_actualizar)
 
 def f_dobleClick(ventana,event):
     elem_actualizar=ventana.tabla_datos.selection()
@@ -54,5 +55,7 @@ def f_dobleClick(ventana,event):
         ventana.nombre_texto.insert(0,nombre)
         ventana.apellidos_texto.insert(0,apellidos)
         ventana.celular_texto.insert(0,celular)
+        ventana.tabla_datos.selection_remove(elem_actualizar)
     else:
         showinfo(title="ACTUALIZAR",message="Ningun registro seleccionado para actualizar")
+        ventana.tabla_datos.selection_remove(elem_actualizar)
