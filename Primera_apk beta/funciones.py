@@ -31,15 +31,19 @@ def f_nuevo(ventana):
 
 def f_eliminar(ventana):
     item_seleccionado = ventana.tabla_datos.selection()
-    dato = ventana.tabla_datos.item(item_seleccionado)['text']
-    print(item_seleccionado)
+
     if item_seleccionado:
+        dato = ventana.tabla_datos.item(item_seleccionado)['text']
         ventana.tabla_datos.delete(item_seleccionado)
-        db.eliminar('Usuarios',where=f'id= "{dato}"')
-        showwarning(title="ELIMINAR",message="Registro elimnado")
+
+        if db.eliminar('Usuarios', where=f'id={dato}'):
+            showwarning(title="ELIMINAR", message="Registro eliminado")
+        else:
+            showerror(title="ERROR", message="Error al eliminar el registro")
+        
         f_limpiar(ventana)
     else:
-        print("Selecciona una fila para eliminar.")
+        showinfo(title="ADVERTENCIA", message="Selecciona una fila para eliminar.")
 
 def f_actualizar(ventana):
     if ventana.nombre_texto.get()=="":
